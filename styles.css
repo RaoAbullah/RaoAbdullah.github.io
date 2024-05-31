@@ -3,7 +3,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f9;
+    background: linear-gradient(120deg, #f0f0f0, #e6e6e6);
     color: #333;
 }
 
@@ -32,10 +32,15 @@ header p {
     height: 150px;
     border-radius: 50%;
     border: 5px solid #fff;
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: -75px;
+}
+
+.header-image {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Navigation Styles */
@@ -63,7 +68,6 @@ nav ul li a {
 
 nav ul li a:hover {
     background: #575757;
-    color: #43c6ac;
 }
 
 /* Section Styles */
