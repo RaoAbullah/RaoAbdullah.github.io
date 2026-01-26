@@ -1,9 +1,22 @@
 // JavaScript to handle animations and interactive elements
 
-// Scroll to Top Button
-let scrollToTopBtn = document.getElementById("scrollToTopBtn");
+// Debounce function for scroll events
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
 
-window.onscroll = function() {
+// Scroll to Top Button
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+const handleScroll = () => {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         scrollToTopBtn.style.display = "block";
     } else {
@@ -11,15 +24,16 @@ window.onscroll = function() {
     }
 };
 
-scrollToTopBtn.onclick = function() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-};
+window.addEventListener('scroll', debounce(handleScroll, 100));
+
+scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
 
 // Intersection Observer for Animations
 const sections = document.querySelectorAll('section');
 
-const options = {
+const observerOptions = {
     root: null,
     rootMargin: '0px',
     threshold: 0.1
@@ -34,7 +48,7 @@ const callback = (entries, observer) => {
     });
 };
 
-const observer = new IntersectionObserver(callback, options);
+const observer = new IntersectionObserver(callback, observerOptions);
 
 sections.forEach(section => {
     section.classList.add('hidden');
