@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,15 +10,22 @@
 </head>
 <body>
     <header>
-        <nav role="navigation" aria-label="Main Navigation">
-            <ul>
-                <li><a href="#education" aria-label="Go to Education section">Education</a></li>
-                <li><a href="#skills" aria-label="Go to Skills section">Skills</a></li>
-                <li><a href="#projects" aria-label="Go to Projects section">Projects</a></li>
-                <li><a href="#certifications" aria-label="Go to Certifications section">Certifications</a></li>
-                <li><a href="#contact" aria-label="Go to Contact section">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-top">
+            <nav role="navigation" aria-label="Main Navigation">
+                <div class="nav-wrapper">
+                    <ul>
+                        <li><a href="#education" aria-label="Go to Education section">Education</a></li>
+                        <li><a href="#skills" aria-label="Go to Skills section">Skills</a></li>
+                        <li><a href="#projects" aria-label="Go to Projects section">Projects</a></li>
+                        <li><a href="#certifications" aria-label="Go to Certifications section">Certifications</a></li>
+                        <li><a href="#contact" aria-label="Go to Contact section">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="theme-switcher">
+                <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">☀️</button>
+            </div>
+        </div>
         <div class="header-content">
             <div class="text-content">
                 <h1>I'm Rao Abdullah, an Undergraduate Computer Engineering Student</h1>
@@ -91,7 +97,7 @@
                     <span class="tag">Web App</span>
                     <span class="tag">API</span>
                 </div>
-                <a href="https://github.com/RaoAbullah/recipe-finder" class="project-link">View GitHub →</a>
+                <a href="https://github.com/RaoAbullah/Recovery-System-With-Flask-API-GUI" class="project-link">View GitHub →</a>
             </div>
             <div class="project-card">
                 <div class="project-icon">🍽️</div>
@@ -269,8 +275,7 @@
     <footer>
         <p>&copy; 2026 Rao Abdullah Nasir. All rights reserved.</p>
     </footer>
-    <button id="scrollToTopBtn" title="Go to top">Top</button>
+    <button id="scrollToTopBtn" title="Go to top">↑</button>
     <script src="script.js"></script>
 </body>
-
 </html>
