@@ -134,3 +134,50 @@ window.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => el.classList.add('visible'), 50);
     });
 });
+
+// ── Page Loader ───────────────────────────────────────────
+window.addEventListener('load', () => {
+    const pageLoader = document.getElementById('pageLoader');
+    if (pageLoader) {
+        setTimeout(() => {
+            pageLoader.classList.add('hide');
+        }, 1400);
+    }
+});
+
+// ── Number Counter for Stats ──────────────────────────────
+function animateCounter(element, target) {
+    let current = 0;
+    const increment = target / 30;
+    const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+            element.textContent = target + '+';
+            clearInterval(timer);
+        } else {
+            element.textContent = Math.floor(current) + '+';
+        }
+    }, 50);
+}
+
+const statsObserver = new IntersectionObserver(
+    (entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !entry.target.dataset.animated) {
+                entry.target.dataset.animated = 'true';
+                const statNum = entry.target.querySelector('.stat-num');
+                if (statNum) {
+                    const text = statNum.textContent;
+                    const number = parseInt(text);
+                    animateCounter(statNum, number);
+                }
+                statsObserver.unobserve(entry.target);
+            }
+        });
+    },
+    { threshold: 0.5 }
+);
+
+document.querySelectorAll('.stat-pill').forEach(pill => {
+    statsObserver.observe(pill);
+});
