@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects — Rao Abdullah Nasir</title>
+    <meta name="description" content="All projects by Rao Abdullah Nasir, including software, AI, web, and digital electronics builds.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <h2 class="loader-text">
+                <span class="loader-char">R</span>
+                <span class="loader-char">a</span>
+                <span class="loader-char">o</span>
+                <span class="loader-char" style="margin-right: 8px;">.</span>
+                <span class="loader-char">A</span>
+                <span class="loader-char">b</span>
+                <span class="loader-char">d</span>
+                <span class="loader-char">u</span>
+                <span class="loader-char">l</span>
+                <span class="loader-char">l</span>
+                <span class="loader-char">a</span>
+                <span class="loader-char">h</span>
+            </h2>
+        </div>
+    </div>
+
+    <div class="noise"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">Portfolio<span class="dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html#education">Education</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#certifications">Certs</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span class="toggle-track">
+                    <span class="toggle-icon sun">☀</span>
+                    <span class="toggle-icon moon">◑</span>
+                    <span class="toggle-thumb"></span>
+                </span>
+            </button>
+            <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="nav-mobile" id="navMobile">
+            <ul>
+                <li><a href="index.html#education">Education</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#certifications">Certs</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
+            <div class="grid-lines"></div>
+        </div>
+        <div class="hero-inner">
+            <div class="hero-text">
+                <p class="hero-eyebrow reveal-up" style="--delay:0.1s">
+                    <span class="status-dot"></span>
+                    Full project showcase
+                </p>
+                <h1 class="hero-name reveal-up" style="--delay:0.2s">
+                    <span class="typewriter">All<br>Projects</span>
+                </h1>
+                <p class="hero-role reveal-up" style="--delay:0.35s">
+                    15+ projects spanning web, AI, desktop apps, and digital electronics.
+                    <br>
+                    Includes internship builds, academic circuits, and personal portfolio work.
+                </p>
+                <div class="hero-cta reveal-up" style="--delay:0.5s">
+                    <a href="index.html" class="btn-ghost">Back to Home</a>
+                    <a href="#gallery" class="btn-primary">Browse Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section section-alt">
+        <div class="section-inner">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Projects Library</span>
+                <h2 class="section-title">Complete Project Collection</h2>
+            </div>
+            <div class="project-gallery">
+                <div class="project-card reveal-up" style="--delay:0.1s">
+                    <div class="project-meta">
+                        <span class="project-label">Internship Project</span>
+                    </div>
+                    <h3>Interview Practice Web App</h3>
+                    <p>Built during the AI SaaS internship at Technologia Solutions LLC to simulate interviews with timed questions, audio/video recording, and session downloads.</p>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>Web App</span>
+                        <span>Media APIs</span>
+                        <span>UX</span>
+                    </div>
+                    <a href="https://raoabullah.github.io/Interviewpractice/" target="_blank" class="project-link">View live project</a>
+                </div>
+
+                <div class="project-card reveal-up" style="--delay:0.15s">
+                    <div class="project-meta">
+                        <span class="project-label">Web Engineering</span>
+                    </div>
+                    <h3>Recipe Finder Web Application</h3>
+                    <p>Search recipes by ingredients, save favorites, and use user authentication with Flask, SQLite, and Spoonacular API integration.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>SQLAlchemy</span>
+                        <span>Bootstrap</span>
+                    </div>
+                    <span class="project-note">CEP academic project</span>
+                </div>
+
+                <div class="project-card reveal-up" style="--delay:0.2s">
+                    <div class="project-meta">
+                        <span class="project-label">C++ / DSA</span>
+                    </div>
+                    <h3>Restaurant Management System (Restroperator)</h3>
+                    <p>A dynamic console-based system using linked lists and stacks to manage orders, billing, and history tracking.</p>
+                    <div class="project-tags">
+                        <span>C++</span>
+                        <span>Data Structures</span>
+                        <span>Order Management</span>
+                    </div>
+                    <a href="https://github.com/ahmedfarazsyk/restroperator" target="_blank" class="project-link">View repo</a>
+                </div>
+
+                <div class="project-card reveal-up" style="--delay:0.25s">
+                    <div class="project-meta">
+                        <span class="project-label">Machine Learning</span>
+                    </div>
+                    <h3>Heart Disease Prediction Model</h3>
+                    <p>AI model trained on clinical data to predict heart disease with over 90% accuracy using scikit-learn and visualization libraries.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Scikit-learn</span>
+                        <span>Healthcare</span>
+                    </div>
+                    <a href="https://www.linkedin.com/posts/rao-abdullah-rajput_a-heart-disease-prediction-ai-model-with-activity-7404007405883297792-KQe2" target="_blank" class="project-link">View post</a>
+                </div>
+
+                <div class="project-card reveal-up" style="--delay:0.3s">
+                    <div class="project-meta">
+                        <span class="project-label">Java / GUI</span>
+                    </div>
+                    <h3>Rock Paper Scissors Game</h3>
+                    <p>Developed both CLI and GUI versions of a Java game with OOP design, interactive gameplay, and visual score tracking.</p>
+                    <div class="project-tags">
+                        <span>Java</span>
+                        <span>OOP</span>
+                        <span>GUI</span>
+                        <span>Game</span>
+                    </div>
+                    <a href="https://github.com/ahmedfarazsyk/rockpaperscissor" target="_blank" class="project-link">View repo</a>
+                </div>
+
+                <div class="project-card reveal-up" style="--delay:0.35s">
+                    <div class="project-meta">
+                        <span class="project-label">Student Tool</span>
+                    </div>
+                    <h3>Student Dashboard</h3>
+                    <p>Interactive dashboard for academic tracking, course management, and performance metrics with a clean UI.</p>
+                    <div class="project-tags">
+                        <span>Web</span>
+                        <span>Dashboard</span>
+                        <span>Analytics</span>
+                    </div>
+                    <a href="https://github.com/RaoAbdullah/studentdashboard" target="_blank" class="project-link">View repo</a>
+                </div>
+
+                <div class="project-card reveal-up" style="--delay:0.4s">
+                    <div class="project-meta">
+                        <span class="project-label">Electronics</span>
+                    </div>
+                    <h3>Fire Detector Alarm</h3>
+                    <p>Infrared-based fire detection circuit using a BC-547 transistor, buzzer, LED, and breadboard to signal nearby fire presence.</p>
+                    <div class="project-tags">
+                        <span>Hardware</span>
+                        <span>Analog Electronics</span>
+                        <span>Embedded Systems</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal-up" style="--delay:0.45s">
+                    <div class="project-meta">
+                        <span class="project-label">Digital Logic</span>
+                    </div>
+                    <h3>Shift Register</h3>
+                    <p>Digital circuit design demonstrating serial data storage and shifting using flip-flops for parallel-to-serial conversion.</p>
+                    <div class="project-tags">
+                        <span>Digital Logic</span>
+                        <span>Sequential Circuits</span>
+                        <span>Flip-Flops</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal-up" style="--delay:0.5s">
+                    <div class="project-meta">
+                        <span class="project-label">Digital Logic</span>
+                    </div>
+                    <h3>Self Stop Counter</h3>
+                    <p>A self-stop counter circuit that tracks stops and halts autonomously without external intervention.</p>
+                    <div class="project-tags">
+                        <span>Logic Design</span>
+                        <span>Counter Circuit</span>
+                        <span>Breadboard</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal-up" style="--delay:0.55s">
+                    <div class="project-meta">
+                        <span class="project-label">Timer Circuit</span>
+                    </div>
+                    <h3>Monostable Multivibrator</h3>
+                    <p>Single-pulse 555 timer circuit creating a controlled output pulse in response to an external trigger.</p>
+                    <div class="project-tags">
+                        <span>555 Timer</span>
+                        <span>Pulse Generation</span>
+                        <span>Analog</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal-up" style="--delay:0.6s">
+                    <div class="project-meta">
+                        <span class="project-label">Logic Design</span>
+                    </div>
+                    <h3>JK Flip-Flop 2-bit Counter</h3>
+                    <p>Cascaded JK flip-flops used to create a binary counter that cycles through 00 to 11 with stable output toggling.</p>
+                    <div class="project-tags">
+                        <span>JK Flip-Flop</span>
+                        <span>Binary Counter</span>
+                        <span>Digital</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal-up" style="--delay:0.65s">
+                    <div class="project-meta">
+                        <span class="project-label">Display Circuit</span>
+                    </div>
+                    <h3>BCD to 7-Segment Decoder</h3>
+                    <p>Used a 74LS247 decoder to convert binary coded decimal inputs into drive signals for a 7-segment display.</p>
+                    <div class="project-tags">
+                        <span>BCD</span>
+                        <span>7-Segment</span>
+                        <span>TTL</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal-up" style="--delay:0.7s">
+                    <div class="project-meta">
+                        <span class="project-label">Oscillator</span>
+                    </div>
+                    <h3>Stable Multivibrator</h3>
+                    <p>An astable 555 timer circuit producing a continuous square-wave signal for timing applications.</p>
+                    <div class="project-tags">
+                        <span>555 Timer</span>
+                        <span>Oscillator</span>
+                        <span>Waveform</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal-up" style="--delay:0.75s">
+                    <div class="project-meta">
+                        <span class="project-label">Binary Counter</span>
+                    </div>
+                    <h3>4-Bit Binary Counter</h3>
+                    <p>A 4-bit counter design using a 555 timer and 74LS93 ICs that counts from 0000 to 1111 and resets automatically.</p>
+                    <div class="project-tags">
+                        <span>74LS93</span>
+                        <span>Counter</span>
+                        <span>Digital</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal-up" style="--delay:0.8s">
+                    <div class="project-meta">
+                        <span class="project-label">Development Module</span>
+                    </div>
+                    <h3>4-Bit Binary Counter with LED Display</h3>
+                    <p>Integrated a 4-bit counter with a decoder and LED display on a development board to visualize binary sequence output.</p>
+                    <div class="project-tags">
+                        <span>LED Display</span>
+                        <span>Decoder</span>
+                        <span>Prototyping</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <span class="nav-logo">Portfolio<span class="dot">.</span></span>
+            <p>© 2026 Rao Abdullah Nasir. All rights reserved.</p>
+            <a href="index.html#hero" class="back-top">Back to top ↑</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
