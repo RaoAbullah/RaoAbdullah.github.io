@@ -1,1 +1,106 @@
-This is my portfolio containing all my details
+# RaoAbdullah.github.io
+
+[![Live Site](https://img.shields.io/badge/Portfolio-Live_Website-success?style=for-the-badge&logo=googlechrome)](https://raoabullah.github.io/RaoAbdullah.github.io/)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/)
+[![GitHub Pages](https://img.shields.io/badge/Hosted_on-GitHub_Pages-222222?style=for-the-badge&logo=github)](https://pages.github.com/)
+
+**RaoAbdullah.github.io** is the personal engineering portfolio of **Rao Abdullah Nasir**, Computer Engineering senior at Mehran University of Engineering & Technology (MUET), Jamshoro (Class of December 2026). Designed from scratch with modern responsive web standards, it showcases academic coursework, professional software engineering internships, machine learning research, and open-source contributions.
+
+---
+
+## 📌 Project Overview
+
+The portfolio serves as an interactive hub for recruiters, collaborators, and engineering teams to explore:
+* **Academic Background & Degree:** B.E. in Computer Engineering from MUET Jamshoro.
+* **Internship Experience:** Work delivered during an AI SaaS Product Internship at Technologia Solutions LLC.
+* **Featured Projects:** Deep Learning, Geospatial Satellite AI, Systems Programming, and Full-Stack Web Applications.
+* **Verified Certifications:** Professional credentials spanning Artificial Intelligence, Python, and Digital Logic Design.
+
+---
+
+## 🏗️ Architecture & Sections
+
+```mermaid
+flowchart TD
+    subgraph Landing [index.html — Main Hub]
+        LOADER[Interactive Letter-Reveal Loader]
+        HERO[Hero Section: Availability, Bio & Stats]
+        EDU[Education: MUET Jamshoro Degree]
+        SKILLS[Technical Capabilities: Languages, Web, Tools]
+        FEAT[Featured Projects: Internship & Capstone]
+        CERTS[Verified Certifications Showcase]
+        CONTACT[Direct Contact Form & Social Links]
+        LOADER --> HERO --> EDU --> SKILLS --> FEAT --> CERTS --> CONTACT
+    end
+
+    subgraph Catalog [projects.html — Complete Library]
+        CAT_HERO[Project Showcase Header]
+        ALL_PROJECTS[Categorized Project Cards: AI, Web, Desktop]
+        CAT_HERO --> ALL_PROJECTS
+    end
+
+    subgraph Design [style.css & script.js]
+        THEME[Theme Engine: Light & Dark Modes]
+        ANIM[Scroll Reveal & Noise Overlay]
+        THEME & ANIM --> Landing & Catalog
+    end
+```
+
+---
+
+## 🌟 Key Features
+
+* **Multi-Page Web Architecture:**
+  * `index.html`: Curated executive overview highlighting core achievements and featured projects.
+  * `projects.html`: Comprehensive repository catalog categorizing software, machine learning, web, and hardware builds.
+* **Dynamic Dark / Light Theme Engine:**
+  * One-click theme toggle switching CSS custom variables (`--bg`, `--text`, `--accent`, `--card-bg`).
+  * Persists user theme preference across page visits.
+* **Modern Visual & Interactive Aesthetics:**
+  * Custom typographic hierarchy featuring Google Fonts: **Syne** (bold geometric headings), **DM Sans** (readable body text), and **JetBrains Mono** (technical badges and metrics).
+  * Animated character-by-character page loader (`R-a-o-.-A-b-d-u-l-l-a-h`).
+  * Floating dynamic radial color blobs and subtle analog film noise texture.
+  * Reveal-on-scroll animations using CSS cubic-bezier timing.
+* **Direct Communication Channels:**
+  * Direct email trigger (`mailto:abdullahnasirrao7@gmail.com`).
+  * Verified links to LinkedIn, GitHub, and social channels.
+
+---
+
+## 📂 Repository File Structure
+
+```text
+RaoAbdullah.github.io/
+├── index.html                 # Main landing page (Hero, Education, Skills, Featured Work, Contact)
+├── projects.html              # Full project catalog library
+├── script.js                  # Theme switcher, scroll observer, loader, and mobile menu logic
+├── style.css                  # Universal stylesheet, theme variables, glassmorphism, animations
+├── profile-pic (21).jpeg      # Profile portrait photography
+└── README.md                  # Comprehensive project documentation
+```
+
+---
+
+## 🚀 Local Development
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/RaoAbullah/RaoAbdullah.github.io.git
+   cd RaoAbdullah.github.io
+   ```
+2. Open `index.html` directly in your browser, or start a local server:
+   ```bash
+   python -m http.server 8000
+   ```
+3. Navigate to `http://localhost:8000` in your web browser.
+
+---
+
+## 👤 Contact & Links
+* **Rao Abdullah Nasir**
+* **Email:** [abdullahnasirrao7@gmail.com](mailto:abdullahnasirrao7@gmail.com)
+* **LinkedIn:** [linkedin.com/in/rao-abdullah-rajput](https://www.linkedin.com/in/rao-abdullah-rajput)
+* **GitHub:** [github.com/RaoAbullah](https://github.com/RaoAbullah)
+* **Live Portfolio:** [raoabullah.github.io/RaoAbdullah.github.io](https://raoabullah.github.io/RaoAbdullah.github.io/)
