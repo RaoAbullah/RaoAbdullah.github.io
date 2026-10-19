@@ -24,28 +24,38 @@ The portfolio serves as an interactive hub for recruiters, collaborators, and en
 
 ```mermaid
 flowchart TD
-    subgraph Landing [index.html — Main Hub]
-        LOADER[Interactive Letter-Reveal Loader]
-        HERO[Hero Section: Availability, Bio & Stats]
-        EDU[Education: MUET Jamshoro Degree]
-        SKILLS[Technical Capabilities: Languages, Web, Tools]
-        FEAT[Featured Projects: Internship & Capstone]
-        CERTS[Verified Certifications Showcase]
-        CONTACT[Direct Contact Form & Social Links]
-        LOADER --> HERO --> EDU --> SKILLS --> FEAT --> CERTS --> CONTACT
+    subgraph Landing ["index.html - Main Hub"]
+        LOADER["Page Loader"]
+        HERO["Hero Section"]
+        EDU["Education Section"]
+        SKILLS["Skills Section"]
+        FEAT["Featured Projects"]
+        CERTS["Certifications Showcase"]
+        CONTACT["Contact & Social"]
+        LOADER --> HERO
+        HERO --> EDU
+        EDU --> SKILLS
+        SKILLS --> FEAT
+        FEAT --> CERTS
+        CERTS --> CONTACT
     end
 
-    subgraph Catalog [projects.html — Complete Library]
-        CAT_HERO[Project Showcase Header]
-        ALL_PROJECTS[Categorized Project Cards: AI, Web, Desktop]
+    subgraph Catalog ["projects.html - Full Library"]
+        CAT_HERO["Showcase Header"]
+        ALL_PROJECTS["Categorized Project Cards"]
         CAT_HERO --> ALL_PROJECTS
     end
 
-    subgraph Design [style.css & script.js]
-        THEME[Theme Engine: Light & Dark Modes]
-        ANIM[Scroll Reveal & Noise Overlay]
-        THEME & ANIM --> Landing & Catalog
+    subgraph Styling ["Design & Interactions"]
+        THEME["Theme Engine (Light & Dark)"]
+        ANIM["Scroll Reveal Animations"]
+        THEME --> Landing
+    ANIM --> Landing
+        THEME --> Catalog
+    ANIM --> Catalog
     end
+
+    HERO --> Catalog
 ```
 
 ---
